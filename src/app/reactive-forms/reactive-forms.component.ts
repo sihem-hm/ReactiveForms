@@ -1,13 +1,14 @@
-
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormArray, Validators } from '@angular/forms';
 
+
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-reactive-forms',
+  templateUrl: './reactive-forms.component.html',
+  styleUrls: ['./reactive-forms.component.css']
 })
-export class AppComponent {
+export class ReactiveFormsComponent implements OnInit {
   courseForm: FormGroup;
   constructor() { }
 
@@ -28,3 +29,4 @@ export class AppComponent {
 		});
 	
 }}
+
