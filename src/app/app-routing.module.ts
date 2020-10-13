@@ -4,8 +4,8 @@ import { TemplateFormsComponent } from './template-forms/template-forms.componen
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 import { AppComponent } from './app.component';
 const routes: Routes = [
-  { path: ' ', component: AppComponent },
   { path: 'Reactive', component: ReactiveFormsComponent },
+  { path: '', redirectTo: '/Reactive',  pathMatch: 'full'},
   { path: 'forms', component: TemplateFormsComponent }
 
 ];
@@ -14,3 +14,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+  

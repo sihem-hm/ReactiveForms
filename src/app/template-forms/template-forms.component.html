@@ -13,12 +13,14 @@
                   required
                   #courseName="ngModel">
               </div>
+              <br>
               <div style="color:red" 
                   *ngIf="courseName.errors && (courseName.dirty || courseName.touched)">    
                   <p *ngIf="courseName.errors.required">
                       Course Name is required
                   </p>
               </div>
+              <br>
           <div class="col-sm-2 form-group">
             <label for="courseDesc">Course Description</label>
             <input
@@ -28,6 +30,7 @@
               name="courseDesc"
               ngModel>
           </div>
+          <br>
           <div class="col-sm-2 form-group">
             <label for="courseAmount">Course Amount</label>
             <input
@@ -38,6 +41,8 @@
               ngModel>
           </div>
         </div>
+        <br>
+     
         <div class="row">
           <div class="col-xs-12">
             <button
@@ -50,6 +55,7 @@
           </div>
         </div>
       </form>
+    
     </div>
   </div>
   <router-outlet></router-outlet>
